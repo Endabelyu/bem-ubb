@@ -1,18 +1,27 @@
 {
-  "name": "backend",
+  "name": "backEnd",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "backend-of-bem-ubb-website",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon src/index.js",
+    "build": "node src/index.js"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "endabelyu",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "latest",
+    "eslint-config-airbnb-base": "latest",
+    "eslint-config-prettier": "latest",
+    "eslint-plugin-import": "latest",
+    "eslint-plugin-prettier": "latest",
+    "nodemon": "^2.0.20",
+    "prettier": "latest"
+  },
   "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.18.1",
-    "express-fileupload": "^1.4.0",
-    "mysql2": "^2.3.3",
-    "sequelize": "^6.21.3"
+    "cors": "latest",
+    "dotenv": "latest",
+    "express": "latest",
+    "mysql2": "^2.3.3"
   }
 }
